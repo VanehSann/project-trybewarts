@@ -10,13 +10,12 @@
 <body>
   <header class='header'>
     <img class='trybewarts-header-logo' src='images/trybewarts-header-logo.svg'>
-    <form class='trybewarts-login'>
-      <input placeholder='Email' name='email'>
-      <input placeholder='Senha' name='password'>
-      <button>Entrar</button>
+    <form action='' class='trybewarts-login'>
+      <input placeholder='Email' name='email' id='trybewarts-login-email'>
+      <input type='password' placeholder='Senha' name='password' id="trybewarts-login-pwd">
+      <button type="submit" id="trybewarts-login-btn">Entrar</button>
     </form>
   </header>
-
   <main>
     <form id='evaluation-form'>
       <label for="input-name">Nome: 
@@ -31,5 +30,6 @@
     </form>
     <img src="images/trybewarts-colored.svg" alt="Trybewarts logo" id='trybewarts-forms-logo'>
   </main>
+  <script src="script.js"></script>
 </body>
 </html>
