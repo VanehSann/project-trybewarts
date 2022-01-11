@@ -1,0 +1,14 @@
+main {
+  display: flex;
+}
+
+main img {
+  height: 500px;
+}
+
+#evaluation-form {
+  width: 675px;
+  display: flex;
+  flex-direction: column;
+}
+
