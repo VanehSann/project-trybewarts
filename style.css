@@ -12,6 +12,11 @@
 .trybewarts-header-title {
     text-align: center;
 }
+#grupo-nome-sobrenome {
+    display:flex;
+    justify-content: space-between;
+}
+
 main {
   display: flex;
 }
