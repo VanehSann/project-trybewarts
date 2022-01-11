@@ -42,3 +42,7 @@ main img {
   flex-direction: row;
   justify-content: space-between;
 }
+#avaliacao {
+    display:flex;
+    flex-direction: row;
+}
