@@ -1,4 +1,3 @@
-
 const loginBtn = document.getElementById('trybewarts-login-btn');
 
 loginBtn.addEventListener('click', function (event) {
