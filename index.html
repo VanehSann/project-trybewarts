@@ -19,23 +19,38 @@
   </header>
   <main>
     <form id='evaluation-form'>
-      <label for="input-name">Nome: 
-        <input type="text" name="name" id="input-name" placeholder="Nome">
-      </label>
-      <label for="input-lastname">Sobrenome: 
-        <input type="text" name="sobrenome" id="input-lastname" placeholder="Sobrenome">
-      </label>
-      <label for="input-email">Email: 
+      <input type="text" name="name" id="input-name" placeholder="Nome">
+      <input type="text" name="sobrenome" id="input-lastname" placeholder="Sobrenome">
+      <div id='second-container'>
         <input type="text" name="email" id="input-email" placeholder="Email">
-      </label>
-      <label for="house">
         <select name="casa" id="house">
           <option value="Gitnória" id="gitnoria-house">Gitnória</option>
           <option value="Reactpuff" id="reactpuff-house">Reactpuff</option>
           <option value="Corvinode" id="corvinode-house">Corvinode</option>
           <option value="Pytherina" id="pytherina-house">Pytherina</option>
         </select>
-      </label>
+      </div>
+      <div id="content-container">
+        <label id="label-content">Qual conteúdo você está com mais vontade de aprender?</label>
+        <label>
+          <input type="checkbox" name="conteudo" value="HoFs">Hofs
+        </label>
+        <label>
+          <input type="checkbox" name="conteudo" value="Jest">Jest
+        </label>
+        <label>
+          <input type="checkbox" name="conteudo" value="Promises">Promises
+        </label>
+        <label>
+          <input type="checkbox" name="conteudo" value="React">React
+        </label>
+        <label>
+          <input type="checkbox" name="conteudo" value="SQL">SQL
+        </label>
+        <label>
+          <input type="checkbox" name="conteudo" value="Python">Python
+        </label>
+      </div>
     </form>
     <img src="images/trybewarts-colored.svg" alt="Trybewarts logo" id='trybewarts-forms-logo'>
   </main>

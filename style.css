@@ -26,4 +26,12 @@ main img {
   flex-direction: column;
 }
 
+#second-container {
+  display: flex;
+  flex-flow: row wrap;
+}
 
+#content-container {
+  display: flex;
+  flex-flow: column;
+}
