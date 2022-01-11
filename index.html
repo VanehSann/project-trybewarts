@@ -19,9 +19,11 @@
   </header>
   <main>
     <form id='evaluation-form'>
-      <input type="text" name="name" id="input-name" placeholder="Nome">
-      <input type="text" name="sobrenome" id="input-lastname" placeholder="Sobrenome">
-      <div id='second-container'>
+      <div id='grupo-nome-sobrenome'>
+        <input type="text" name="name" id="input-name" placeholder="Nome">
+        <input type="text" name="sobrenome" id="input-lastname" placeholder="Sobrenome"></div>
+      </div>
+      <div id="grupo-email-casa">
         <input type="text" name="email" id="input-email" placeholder="Email">
         <select name="casa" id="house">
           <option value="Gitnória" id="gitnoria-house">Gitnória</option>
@@ -30,26 +32,34 @@
           <option value="Pytherina" id="pytherina-house">Pytherina</option>
         </select>
       </div>
-      <div id="content-container">
-        <label id="label-content">Qual conteúdo você está com mais vontade de aprender?</label>
-        <label>
-          <input type="checkbox" name="conteudo" value="HoFs">Hofs
-        </label>
-        <label>
-          <input type="checkbox" name="conteudo" value="Jest">Jest
-        </label>
-        <label>
-          <input type="checkbox" name="conteudo" value="Promises">Promises
-        </label>
-        <label>
-          <input type="checkbox" name="conteudo" value="React">React
-        </label>
-        <label>
-          <input type="checkbox" name="conteudo" value="SQL">SQL
-        </label>
-        <label>
-          <input type="checkbox" name="conteudo" value="Python">Python
-        </label>
+      <div id="family-content-super-container">
+        <div id='family-container'>
+          <label id='label-family' for='qual-familia'>Qual sua família?</label>
+          <label><input type='radio' name='family' value='Frontend'>Frontend</label>
+          <label><input type='radio' name='family' value='Backend'>Backend</label>
+          <label><input type='radio' name='family' value='FullStack'>FullStack<label>
+        </div>
+        <div id="content-container">
+          <label id="label-content">Qual conteúdo você está com mais vontade de aprender?</label>
+          <label>
+            <input type="checkbox" name="conteudo" value="HoFs">Hofs
+          </label>
+          <label>
+            <input type="checkbox" name="conteudo" value="Jest">Jest
+          </label>
+          <label>
+            <input type="checkbox" name="conteudo" value="Promises">Promises
+          </label>
+          <label>
+            <input type="checkbox" name="conteudo" value="React">React
+          </label>
+          <label>
+            <input type="checkbox" name="conteudo" value="SQL">SQL
+          </label>
+          <label>
+            <input type="checkbox" name="conteudo" value="Python">Python
+          </label>
+        </div>
       </div>
     </form>
     <img src="images/trybewarts-colored.svg" alt="Trybewarts logo" id='trybewarts-forms-logo'>

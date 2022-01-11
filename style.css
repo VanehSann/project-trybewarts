@@ -12,6 +12,7 @@
 .trybewarts-header-title {
     text-align: center;
 }
+
 main {
   display: flex;
 }
@@ -26,12 +27,18 @@ main img {
   flex-direction: column;
 }
 
-#second-container {
-  display: flex;
-  flex-flow: row wrap;
-}
-
 #content-container {
   display: flex;
   flex-flow: column;
+}
+
+#family-container {
+    display:flex;
+   flex-direction: column;
+}
+
+#family-content-super-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
