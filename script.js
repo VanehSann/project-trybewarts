@@ -14,3 +14,15 @@ loginBtn.addEventListener('click', function (event) {
     alert("Email ou senha inválidos.");
   }
 });
+
+const submitBtn = document.getElementById('submit-btn');
+submitBtn.disabled = true;
+
+const agreement = document.getElementById('agreement');
+agreement.addEventListener('click', function (event) {
+  if (event.target.checked == true) {
+    document.getElementById('submit-btn').disabled = false;
+  } else {
+    document.getElementById('submit-btn').disabled = true;
+  }
+});

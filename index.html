@@ -35,14 +35,14 @@
       <div id="family-content-super-container">
         <div id='family-container'>
           <label id='label-family' for='qual-familia'>Qual sua família?</label>
-          <label><input type='radio' name='family' value='Frontend'>Frontend</label>
+          <label><input type='radio' name='family' value='Frontend' checked>Frontend</label>
           <label><input type='radio' name='family' value='Backend'>Backend</label>
           <label><input type='radio' name='family' value='FullStack'>FullStack<label>
         </div>
         <div id="content-container">
           <label id="label-content">Qual conteúdo você está com mais vontade de aprender?</label>
           <label>
-            <input type="checkbox" name="conteudo" value="HoFs">Hofs
+            <input type="checkbox" name="conteudo" value="HoFs" checked>Hofs
           </label>
           <label>
             <input type="checkbox" name="conteudo" value="Jest">Jest
@@ -72,12 +72,21 @@
         <input type='radio' name="rate" value='7'>7
         <input type='radio' name="rate" value='8'>8
         <input type='radio' name="rate" value='9'>9
-        <input type='radio' name="rate" value='10'>10
+        <input type='radio' name="rate" value='10' checked>10
       </div>
-      <textarea id="textarea" placeholder="Deixe seu comentário:" cols="30" rows="10" maxlength="500"></textarea>
+      <label class="textarea">Deixe seu comentário:
+        <textarea id="textarea" placeholder="Deixe seu comentário:" name="comentario" cols="30" rows="10" maxlength="500"></textarea>
+      </label>
+      <label id="label-infos" for="agreement">Você concorda com o uso das informações acima?
+        <input type="checkbox" id="agreement">
+      </label>
+      <button type="submit" id='submit-btn'>Enviar</button>
     </form>
     <img src="images/trybewarts-colored.svg" alt="Trybewarts logo" id='trybewarts-forms-logo'>
   </main>
+  <footer>
+    <p>Direitos reservados à Trybewarts©</p>
+  </footer>
   <script src="script.js"></script>
 </body>
 </html>
