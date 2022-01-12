@@ -4,14 +4,14 @@ loginBtn.addEventListener('click', function (event) {
   event.preventDefault();
   const email = document.getElementById('trybewarts-login-email').value;
   const senha = document.getElementById('trybewarts-login-pwd').value;
-  if (email == "tryber@teste.com" ){
-    if (senha == "123456") {
-      alert("Olá, Tryber!");
+  if (email === 'tryber@teste.com') {
+    if (senha === '123456') {
+      alert('Olá, Tryber!');
     } else {
-      alert("Email ou senha inválidos.");
+      alert('Email ou senha inválidos.');
     }
   } else {
-    alert("Email ou senha inválidos.");
+    alert('Email ou senha inválidos.');
   }
 });
 
@@ -20,7 +20,7 @@ submitBtn.disabled = true;
 
 const agreement = document.getElementById('agreement');
 agreement.addEventListener('click', function (event) {
-  if (event.target.checked == true) {
+  if (event.target.checked === true) {
     document.getElementById('submit-btn').disabled = false;
   } else {
     document.getElementById('submit-btn').disabled = true;
@@ -57,7 +57,7 @@ function casaFinal() {
 function familiaFinal() {
   const familia = document.getElementsByName('family');
   for (let i = 0; i < familia.length; i += 1) {
-    if (familia[i].checked == true) {
+    if (familia[i].checked === true) {
       let familiaFinal = familia[i].value;
       return familiaFinal;
     }
@@ -68,7 +68,7 @@ function materiasFinal() {
   const materias = document.getElementsByName('conteudo');
   let materiasFinal = [];
   for(let i = 0; i < materias.length; i += 1) {
-    if (materias[i].checked == true) {
+    if (materias[i].checked === true) {
       materiasFinal.push(materias[i].value);
     }
   }
@@ -78,7 +78,7 @@ function materiasFinal() {
 function avaliacaoFinal() {
   const avaliacao = document.getElementsByClassName('evaluation');
   for (let i = 0; i < avaliacao.length; i += 1) {
-    if (avaliacao[i].checked == true) {
+    if (avaliacao[i].checked === true) {
       let avaliacaoFinal = avaliacao[i].value;
       return avaliacaoFinal;
     }
