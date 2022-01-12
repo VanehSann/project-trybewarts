@@ -54,7 +54,7 @@ function casaFinal() {
   return casa;
 }
 
-function familiaFinal() {
+function familiaFinalF() {
   const familia = document.getElementsByName('family');
   for (let i = 0; i < familia.length; i += 1) {
     if (familia[i].checked === true) {
@@ -64,7 +64,7 @@ function familiaFinal() {
   }
 }
 
-function materiasFinal() {
+function materiasFinalF() {
   const materias = document.getElementsByName('conteudo');
   let materiasFinal = [];
   for(let i = 0; i < materias.length; i += 1) {
@@ -75,11 +75,11 @@ function materiasFinal() {
   return materiasFinal;
 }
 
-function avaliacaoFinal() {
+function avaliacaoFinalF() {
   const avaliacao = document.getElementsByClassName('evaluation');
   for (let i = 0; i < avaliacao.length; i += 1) {
     if (avaliacao[i].checked === true) {
-      let avaliacaoFinal = avaliacao[i].value;
+      const avaliacaoFinal = avaliacao[i].value;
       return avaliacaoFinal;
     }
   }
@@ -155,9 +155,9 @@ submitBtn.addEventListener('click', function (event) {
   const nome = nomeFinal();
   const email = emailFinal();
   const casa = casaFinal();
-  const familia = familiaFinal();
-  const materias = materiasFinal();
-  const avaliacao = avaliacaoFinal();
+  const familia = familiaFinalF();
+  const materias = materiasFinalF();
+  const avaliacao = avaliacaoFinalF();
   const observacao = observacaoFinal();
   apagaTudo();
   criaNovos(nome, email, casa, familia, materias, avaliacao, observacao);
