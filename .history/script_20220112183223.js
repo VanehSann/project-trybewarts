@@ -1,6 +1,6 @@
 const loginBtn = document.getElementById('trybewarts-login-btn');
 
-// loginBtn.addEventListener('click', function (event) { 
+// loginBtn.addEventListener('click', function (event) {
 loginBtn.addEventListener('click', (event) => {
   event.preventDefault();
   const email = document.getElementById('trybewarts-login-email').value;

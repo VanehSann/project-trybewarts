@@ -1,7 +1,6 @@
 const loginBtn = document.getElementById('trybewarts-login-btn');
 
-// loginBtn.addEventListener('click', function (event) { 
-loginBtn.addEventListener('click', (event) => {
+loginBtn.addEventListener('click', function (event) {
   event.preventDefault();
   const email = document.getElementById('trybewarts-login-email').value;
   const senha = document.getElementById('trybewarts-login-pwd').value;
@@ -20,7 +19,7 @@ const submitBtn = document.getElementById('submit-btn');
 submitBtn.disabled = true;
 
 const agreement = document.getElementById('agreement');
-agreement.addEventListener('click', (event) => {
+agreement.addEventListener('click', function (event) {
   if (event.target.checked === true) {
     submitBtn.disabled = false;
   } else {
@@ -31,7 +30,7 @@ agreement.addEventListener('click', (event) => {
 // testando aqui - bonus 20 - inspirado http://jsfiddle.net/5pw5L/
 const textarea = document.getElementById('textarea');
 
-textarea.addEventListener('keyup', (event) => {
+textarea.addEventListener('keyup', function (event) {
   const qtdDeLetras = event.target.value.split('').length;
   const qtdDeLetrasMax = 500;
   const qtdDeLetrasRestantes = qtdDeLetrasMax - qtdDeLetras;
@@ -91,72 +90,67 @@ function observacaoFinal() {
   return observacao;
 }
 
-function apagaTudo(formId) {
-  document.getElementById(formId).remove();
+function apagaTudo() {
+  document.getElementById('evaluation-form').remove();
 }
 
-function criaNome(nome, formId) {
+function criaNome(nome) {
   const p = document.createElement('p');
   p.innerText = `Nome: ${nome}`;
-  document.getElementById(formId).appendChild(p);
+  document.getElementById('evaluation-form').appendChild(p);
 }
 
-function criaEmail(email, formId) {
+function criaEmail(email) {
   const p = document.createElement('p');
   p.innerText = `Email: ${email}`;
-  document.getElementById(formId).appendChild(p);
+  document.getElementById('evaluation-form').appendChild(p);
 }
 
-function criaCasa(casa, formId) {
+function criaCasa(casa) {
   const p = document.createElement('p');
   p.innerText = `Casa: ${casa}`;
-  document.getElementById(formId).appendChild(p);
+  document.getElementById('evaluation-form').appendChild(p);
 }
 
-function criaFamilia(familia, formId) {
+function criaFamilia(familia) {
   const p = document.createElement('p');
   p.innerText = `Família: ${familia}`;
-  document.getElementById(formId).appendChild(p);
+  document.getElementById('evaluation-form').appendChild(p);
 }
 
-function criaMaterias(materias, formId) {
+function criaMaterias(materias) {
   const p = document.createElement('p');
   p.innerText = `Matérias: ${materias.join(', ')}`;
-  document.getElementById(formId).appendChild(p);
+  document.getElementById('evaluation-form').appendChild(p);
 }
 
-function criaAvaliacao(avaliacao, formId) {
+function criaAvaliacao(avaliacao) {
   const p = document.createElement('p');
   p.innerText = `Avaliação: ${avaliacao}`;
-  document.getElementById(formId).appendChild(p);
+  document.getElementById('evaluation-form').appendChild(p);
 }
 
-function criaObservacao(observacao, formId) {
+function criaObservacao(observacao) {
   const p = document.createElement('p');
   p.innerText = `Observações: ${observacao}`;
-  document.getElementById(formId).appendChild(p);
+  document.getElementById('evaluation-form').appendChild(p);
 }
 
-const form = 'evaluation-form';
-
-function criaNovos(nome, email, casa, familia) {
-  const newForm = document.createElement('form');
-  newForm.id = form;
+function criaNovos(nome, email, casa, familia, materias, avaliacao, observacao) {
+  const form = document.createElement('form');
+  form.id = 'evaluation-form';
   const img = document.getElementById('trybewarts-forms-logo');
-  document.getElementsByTagName('main')[0].insertBefore(newForm, img);
-  criaNome(nome, form);
-  criaEmail(email, form);
-  criaCasa(casa, form);
-  criaFamilia(familia, form);
+  document.getElementsByTagName('main')[0].insertBefore(form, img);
+  criaNome(nome);
+  criaEmail(email);
+  criaCasa(casa);
+  criaFamilia(familia);
+  criaMaterias(materias);
+  criaAvaliacao(avaliacao);
+  criaObservacao(observacao);
 }
 
-function criaNovos2(materias, avaliacao, observacao) {
-  criaMaterias(materias, form);
-  criaAvaliacao(avaliacao, form);
-  criaObservacao(observacao, form);
-}
-
-submitBtn.addEventListener('click', (event) => {
+submitBtn.addEventListener('click', function (event) {
   event.preventDefault();
   const nome = nomeFinal();
   const email = emailFinal();
@@ -165,7 +159,6 @@ submitBtn.addEventListener('click', (event) => {
   const materias = materiasFinalF();
   const avaliacao = avaliacaoFinalF();
   const observacao = observacaoFinal();
-  apagaTudo('evaluation-form');
-  criaNovos(nome, email, casa, familia);
-  criaNovos2(materias, avaliacao, observacao);
+  apagaTudo();
+  criaNovos(nome, email, casa, familia, materias, avaliacao, observacao);
 });
