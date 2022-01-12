@@ -21,9 +21,9 @@ submitBtn.disabled = true;
 const agreement = document.getElementById('agreement');
 agreement.addEventListener('click', function (event) {
   if (event.target.checked === true) {
-    document.getElementById('submit-btn').disabled = false;
+    submitBtn.disabled = false;
   } else {
-    document.getElementById('submit-btn').disabled = true;
+    submitBtn.disabled = true;
   }
 });
 
@@ -58,7 +58,7 @@ function familiaFinalF() {
   const familia = document.getElementsByName('family');
   for (let i = 0; i < familia.length; i += 1) {
     if (familia[i].checked === true) {
-      let familiaFinal = familia[i].value;
+      const familiaFinal = familia[i].value;
       return familiaFinal;
     }
   }
@@ -66,8 +66,8 @@ function familiaFinalF() {
 
 function materiasFinalF() {
   const materias = document.getElementsByName('conteudo');
-  let materiasFinal = [];
-  for(let i = 0; i < materias.length; i += 1) {
+  const materiasFinal = [];
+  for (let i = 0; i < materias.length; i += 1) {
     if (materias[i].checked === true) {
       materiasFinal.push(materias[i].value);
     }
