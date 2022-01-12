@@ -188,7 +188,7 @@ footer {
 #counter {
   position: relative;
   float: right;
-  z-index: 999999999999999;
+  z-index: 9999999;
   margin-top: -45px;
   right: 5px;
 }
