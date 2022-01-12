@@ -25,6 +25,7 @@
 
 main {
   display: flex;
+  justify-content: space-around;
 }
 
 #trybewarts-forms-logo {
@@ -35,6 +36,8 @@ main {
   width: 675px;
   display: flex;
   flex-direction: column;
+  background: #f9f9f9;
+  padding: 2%;
 }
 
 #content-container {
@@ -89,4 +92,11 @@ main {
   height: 32px;
   border-radius: 3px;
   border: 1px solid rgb(243, 238, 215);
+}
+
+footer {
+  background: #f3eed7;
+  text-align: center;
+  padding: 1%;
+  bottom: 0;
 }
