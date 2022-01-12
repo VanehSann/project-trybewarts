@@ -28,7 +28,14 @@ agreement.addEventListener('click', function (event) {
 });
 
 // testando aqui - bonus 20 - inspirado http://jsfiddle.net/5pw5L/
+const textarea = document.getElementById('textarea');
 
+textarea.addEventListener('keyup', function (event) {
+  const qtdDeLetras = event.target.value.split('').length;
+  const qtdDeLetrasMax = 500;
+  const qtdDeLetrasRestantes = qtdDeLetrasMax - qtdDeLetras;
+  document.getElementById('counter').innerText = qtdDeLetrasRestantes;
+});
 
 function nomeFinal() {
   const nome = document.getElementById('input-name').value;
