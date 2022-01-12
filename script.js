@@ -40,7 +40,7 @@ textarea.addEventListener('keyup', function (event) {
 function nomeFinal() {
   const nome = document.getElementById('input-name').value;
   const sobrenome = document.getElementById('input-lastname').value;
-  const nomeCompleto = nome + ' ' + sobrenome;
+  const nomeCompleto = `${nome} ${sobrenome}`;
   return nomeCompleto;
 }
 
@@ -96,43 +96,43 @@ function apagaTudo() {
 
 function criaNome(nome) {
   const p = document.createElement('p');
-  p.innerText = 'Nome: ' + nome;
+  p.innerText = `Nome: ${nome}`;
   document.getElementById('evaluation-form').appendChild(p);
 }
 
 function criaEmail(email) {
   const p = document.createElement('p');
-  p.innerText = 'Email: ' + email;
+  p.innerText = `Email: ${email}`;
   document.getElementById('evaluation-form').appendChild(p);
 }
 
 function criaCasa(casa) {
   const p = document.createElement('p');
-  p.innerText = 'Casa: ' + casa;
+  p.innerText = `Casa: ${casa}`;
   document.getElementById('evaluation-form').appendChild(p);
 }
 
 function criaFamilia(familia) {
   const p = document.createElement('p');
-  p.innerText = 'Família: ' + familia;
+  p.innerText = `Família: ${familia}`;
   document.getElementById('evaluation-form').appendChild(p);
 }
 
 function criaMaterias(materias) {
   const p = document.createElement('p');
-  p.innerText = 'Matérias: ' + materias.join(', ');
+  p.innerText = `Matérias: ${materias.join(', ')}`;
   document.getElementById('evaluation-form').appendChild(p);
 }
 
 function criaAvaliacao(avaliacao) {
   const p = document.createElement('p');
-  p.innerText = 'Avaliação: ' + avaliacao;
+  p.innerText = `Avaliação: ${avaliacao}`;
   document.getElementById('evaluation-form').appendChild(p);
 }
 
 function criaObservacao(observacao) {
   const p = document.createElement('p');
-  p.innerText = 'Observações: ' + observacao;
+  p.innerText = `Observações: ${observacao}`;
   document.getElementById('evaluation-form').appendChild(p);
 }
 
