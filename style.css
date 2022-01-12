@@ -1,16 +1,16 @@
 .header {
-    display:flex;
-    background-color: rgb(50, 167, 145);
-    height:60px;
-    justify-content: space-between;
+  display: flex;
+  background-color: rgb(50, 167, 145);
+  height: 60px;
+  justify-content: space-between;
 }
 
 .trybewarts-login {
-   display:flex;
- 
+  display: flex;
 }
+
 .trybewarts-header-title {
-    text-align: center;
+  text-align: center;
 }
 
 main {
@@ -33,8 +33,8 @@ main {
 }
 
 #family-container {
-    display:flex;
-   flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 #family-content-super-container {
@@ -42,7 +42,8 @@ main {
   flex-direction: row;
   justify-content: space-between;
 }
+
 #avaliacao {
-    display:flex;
-    flex-direction: row;
+  display: flex;
+  flex-direction: row;
 }
