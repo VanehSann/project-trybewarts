@@ -1,6 +1,6 @@
 const loginBtn = document.getElementById('trybewarts-login-btn');
 
-loginBtn.addEventListener('click', function (event) {
+function loginResult(event) {
   event.preventDefault();
   const email = document.getElementById('trybewarts-login-email').value;
   const senha = document.getElementById('trybewarts-login-pwd').value;
@@ -13,29 +13,34 @@ loginBtn.addEventListener('click', function (event) {
   } else {
     alert('Email ou senha inválidos.');
   }
-});
+}
+
+loginBtn.addEventListener('click', loginResult);
 
 const submitBtn = document.getElementById('submit-btn');
 submitBtn.disabled = true;
 
 const agreement = document.getElementById('agreement');
-agreement.addEventListener('click', function (event) {
+
+function agreementChecked(event) {
   if (event.target.checked === true) {
     submitBtn.disabled = false;
   } else {
     submitBtn.disabled = true;
   }
-});
+}
+
+agreement.addEventListener('click', agreementChecked);
 
 // testando aqui - bonus 20 - inspirado http://jsfiddle.net/5pw5L/
 const textarea = document.getElementById('textarea');
-
-textarea.addEventListener('keyup', function (event) {
+function textareaCounter(event) {
   const qtdDeLetras = event.target.value.split('').length;
   const qtdDeLetrasMax = 500;
   const qtdDeLetrasRestantes = qtdDeLetrasMax - qtdDeLetras;
   document.getElementById('counter').innerText = qtdDeLetrasRestantes;
-});
+}
+textarea.addEventListener('keyup', textareaCounter);
 
 function nomeFinal() {
   const nome = document.getElementById('input-name').value;
@@ -150,7 +155,7 @@ function criaNovos(nome, email, casa, familia, materias, avaliacao, observacao) 
   criaObservacao(observacao);
 }
 
-submitBtn.addEventListener('click', function (event) {
+function submitResult(event) {
   event.preventDefault();
   const nome = nomeFinal();
   const email = emailFinal();
@@ -161,4 +166,6 @@ submitBtn.addEventListener('click', function (event) {
   const observacao = observacaoFinal();
   apagaTudo();
   criaNovos(nome, email, casa, familia, materias, avaliacao, observacao);
-});
+}
+
+submitBtn.addEventListener('click', submitResult);
