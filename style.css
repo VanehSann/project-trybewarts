@@ -213,3 +213,139 @@ footer {
   background-color: rgba(221, 221, 221, 0.749);
   color: rgb(173, 173, 173);
 }
+
+@media screen and ( max-width : 1024px ) {
+
+  main {
+    flex-wrap: wrap;
+  }
+
+  #trybewarts-forms-logo {
+    width: 100%;
+  }
+}
+
+@media screen and ( max-width : 1100px ) {
+
+  .header {
+    justify-content: space-evenly;
+  }
+
+}
+
+@media screen and ( max-width : 800px ) {
+
+  main {
+    flex-wrap: wrap;
+  }
+
+  #input-name , #input-lastname , #input-email {
+    margin-top: 5px;
+    margin-right: 0;
+  }
+
+  #grupo-nome-sobrenome , #grupo-email-casa {
+    width: 80%;
+    display: block;
+  }
+
+  #input-email {
+    margin-top: 0;
+  }
+
+  #evaluation-form {
+    width: 100%;
+    box-shadow: 0;
+  }
+
+  #house {
+    width: 104%;
+    margin-top: 6px;
+  }
+
+  .textarea {
+    width: 81%;
+    color: rgb(98, 98, 98);
+    display: flex;
+    justify-content: flex-start;
+    flex-flow: nowrap;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #family-content-super-container {
+    display: flex;
+    flex-flow: wrap;
+    flex-direction: column;
+    margin-top: 13px;
+    width: 66%;
+    font-size: 0.9em;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #family-container {
+    width: 100%;
+  }
+
+  #content-container {
+    margin-top: -73px;
+    width: 100%;
+  }
+
+  #avaliacao {
+    display: block;
+    width: 81%;
+    justify-content: unset;
+    flex-direction: column;
+    margin: 14px 38px;
+  }
+
+  #label-rate {
+    width: 100%;
+    display: block;
+  }
+
+  .evaluation {
+    height: 20px;
+    width: 30px;
+  }
+
+  #label-infos {
+    margin-top: 27px;
+    width: 80%;
+
+  }
+
+  .trybewarts-header-logo {
+    margin-right: 1%;
+    width: 48px;
+  }
+
+  .header {
+    height: auto;
+    flex-wrap: wrap;
+    padding: 2% 1%;
+    justify-content: center;
+  }
+
+  #trybewarts-header-title {
+    margin-left: 0;
+  }
+
+  .trybewarts-login {
+    margin-right: 0;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+  }
+
+  #trybewarts-login-email , #trybewarts-login-pwd , #trybewarts-login-btn {
+    width: 100%;
+    margin-right: 5px;
+    margin-top: 4px;
+  }
+
+}
