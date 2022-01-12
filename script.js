@@ -26,3 +26,4 @@ agreement.addEventListener('click', function (event) {
     document.getElementById('submit-btn').disabled = true;
   }
 });
+// testando aqui - bonus 20 - inspirado http://jsfiddle.net/5pw5L/
