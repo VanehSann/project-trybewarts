@@ -34,26 +34,41 @@ main {
 
 #evaluation-form {
   width: 675px;
+  box-shadow: 4px 62px rgb(213, 213, 213);
   display: flex;
   flex-direction: column;
-  background: #f9f9f9;
+  align-items: center;
+  background: white;
+  justify-content: space-between;
   padding: 2%;
 }
 
 #content-container {
   display: flex;
+  color: rgb(98, 98, 98);
   flex-flow: column;
+  flex-direction: column;
+  align-content: space-between;
+  justify-content: space-evenly;
+  align-items: flex-start;
 }
 
 #family-container {
   display: flex;
   flex-direction: column;
+  width: 54%;
+  margin: 0 0 83px;
+  justify-content: space-evenly;
 }
 
 #family-content-super-container {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  margin-top: 0;
+  width: 66%;
+  font-size: 0.9em;
+  height: 208px;
+  justify-content: center;
 }
 
 #avaliacao {
@@ -71,7 +86,7 @@ main {
   height: 20px;
   padding: 1.5%;
   border-radius: 4px;
-  border: 1px solid rgb(243, 238, 215);
+  border: 1px solid rgb(211 211 211);
 }
 
 #trybewarts-login-pwd {
@@ -94,9 +109,59 @@ main {
   border: 1px solid rgb(243, 238, 215);
 }
 
+#grupo-nome-sobrenome {
+  display: flex;
+  width: 70%;
+  justify-content: space-around;
+}
+
+#grupo-email-casa {
+  display: flex;
+  width: 70%;
+  margin-top: 6px;
+  justify-content: space-around;
+}
+
+#input-email {
+  width: 100%;
+}
+
+#house {
+  height: 36px;
+  color: rgb(106, 105, 105);
+  width: 65%;
+  background: white;
+  margin-right: 5px;
+  padding: 1.5%;
+  border-radius: 4px;
+  border: 1px solid rgb(207 207 207);
+}
+
+.family {
+  height: auto;
+}
+
+#label-family > label {
+  font-size: 4em;
+  color: gray;
+}
+
+#family-container > label {
+  color: rgb(98, 98, 98);
+}
+
 footer {
-  background: #f3eed7;
+  background: rgb(243, 238, 215);
   text-align: center;
   padding: 1%;
   bottom: 0;
+}
+
+#input-name , #input-lastname , #input-email {
+  margin-right: 5px;
+  height: 20px;
+  padding: 1.5%;
+  width: 100%;
+  border-radius: 4px;
+  border: 1px solid rgb(207 207 207);
 }
