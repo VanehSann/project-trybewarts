@@ -130,7 +130,7 @@ Layout
  </td><td><img src="./trybewarts.gif" /></td></tr>
  <tr><td> 
  MOBILE
- </td></tr> 
+ </td><td><img src="./trybewarts-mobile.gif" /></td></tr></tr> 
     </table>
       </blockquote>
   </div>
