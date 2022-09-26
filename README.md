@@ -23,7 +23,21 @@
   </table>
   
   <br>
-  
+   <blockquote>
+    <h2 align="left">
+   🥇 Projeto de Orgulho
+  </h2>
+<table>
+    <tr>
+      <td>
+      <br>
+        <p align="left">
+        Esse projetos foi uns dos mais divertidos, empolgantes que fiz na minha jornada na trybe, como era o primeiro projeto em dupla, tivemos que aprender a nos comunicar de maneira assertiva, interagir, ser transparente, coloborar, se apoiar e sinto que eu e o Lucas fizemos isso com mastreia. Era um lugar seguro pra se desafiar, e ser nós mesmos e colocar essa autenticidade no projeto. </p>
+      </td>
+    </tr>
+ 
+</table> 
+  </blockquote>
   <blockquote>
     <h2 align="left">
    Sobre
@@ -32,7 +46,6 @@
     <tr>
       <td><br>
         <p align="left">
-        Esse projetos foi uns dos mais divertidos, empolgantes que fiz na minha jornada na trybe, como era o primeiro projeto em dupla, tivemos que aprender a nos comunicar de maneira assertiva, interagir, ser transparente, coloborar, se apoiar e sinto que eu e o Lucas fizemos isso com mastreia. Era um lugar seguro pra se desafiar, e ser nós mesmos e colocar essa autenticidade no projeto. </p>
     <p align="left">Nosso primeiro projeto em dupla da trybe, que fiz com o <a href="https://github.com/lucasbaq" target="_blank">Lucas Quintela</a>, nesse projeto, precisavamos criar um formulários com todas as especificações exigidas, que tivesse um css responsivo adaptável para diversas telas, incluindo mobile, que utilizássemos o CSS flexbox para facilitar esse processo. Tinham que habilitar e desabilitar o botão caso o formulário fosse apto para ser enviado e inclusive simularmos um processo de login com email e senha. E após tudo isso, havia dois requisitos bônus, um era para que para que houvesse um contador e limitador de caracteres e que pudéssemos conferir as informações ditadas pelo usuário ao clicarmos no botão enviar. Para fazer login, é preciso preencher corretamente email: `tryber@teste.com` e senha: `123456`, caso tente usar outra senha e email, aperecerá uma mensagem de erro. </p>
       </td>
     </tr>
