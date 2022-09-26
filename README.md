@@ -32,7 +32,7 @@
       <td>
       <br>
         <p align="left">
-        Esse projetos foi uns dos mais divertidos, empolgantes que fiz na minha jornada na trybe, como era o primeiro projeto em dupla, tivemos que aprender a nos comunicar de maneira assertiva, interagir, ser transparente, coloborar, se apoiar e sinto que eu e o Lucas fizemos isso com mastreia. Era um lugar seguro pra se desafiar, e ser nós mesmos e colocar essa autenticidade no projeto. </p>
+        Esse projetos foi uns dos mais divertidos, empolgantes que fiz na minha jornada na trybe, como era o primeiro projeto em dupla, tivemos que aprender a nos comunicar de maneira assertiva, interagir, ser transparente, colaborar, se apoiar e sinto que eu e o Lucas fizemos isso com mastreia. Era um lugar seguro pra se desafiar, e ser nós mesmos e colocar essa autenticidade no projeto. </p>
       </td>
     </tr>
  
